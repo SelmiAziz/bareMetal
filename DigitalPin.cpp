@@ -35,3 +35,8 @@ bool DigitalPin::read() const
 {
 	return (*pinReg & (1<<bit)) != 0;
 }
+
+//there is a bug
+void DigitalPin::toggle() {
+	*port ^= (1<<bit);
+}

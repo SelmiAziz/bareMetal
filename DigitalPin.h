@@ -26,6 +26,7 @@ public:
 	void begin(PinMode mode); 
 	void write(bool value); 
 	bool read() const; 
+	void toggle();
 
 
 };
